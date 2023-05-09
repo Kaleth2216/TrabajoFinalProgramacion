@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Consultas recibidas</title>
+</head>
+<body>
+<h1>Listado de consultas recibidas</h1>
+<table>
+  <thead>
+  <tr>
+    <th>Nombre</th>
+    <th>Correo electrónico</th>
+    <th>Teléfono</th>
+    <th>Asunto</th>
+    <th>Mensaje</th>
+  </tr>
+  </thead>
+  <tbody>
+  [[#th:each="consulta : ${consultas}"]]
+  <tr>
+    <td>[[${consulta.nombre}]]</td>
+    <td>[[${consulta.email}]]</td>
+    <td>[[${consulta.telefono}]]</td>
+    <td>[[${consulta.asunto}]]</td>
+    <td>[[${consulta.mensaje}]]</td>
+  </tr>
+  [[/th:each]]
+  </tbody>
+</table>
+</body>
+</html>
