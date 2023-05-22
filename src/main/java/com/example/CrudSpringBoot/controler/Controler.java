@@ -56,10 +56,6 @@ public class Controler {
         model.addAttribute("persona", new Persona());
         return "formulario";
 
-    }@GetMapping("/modifica")
-    public String agregar8(Model model){
-        model.addAttribute("persona", new Persona());
-        return "editador";
     }
 
     @PostMapping("/save")
