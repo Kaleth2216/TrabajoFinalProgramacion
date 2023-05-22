@@ -41,8 +41,8 @@ public class Controler {
 
     @GetMapping("/listar")
     public String listar(Model model){
-        List<Persona>personas= service.listar();
-        model.addAttribute("personas", personas);
+        List<Persona>persona= service.listar();
+        model.addAttribute("persona", persona);
         return "index";
     }
 
