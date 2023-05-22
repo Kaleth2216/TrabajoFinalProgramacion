@@ -1,11 +1,12 @@
-package com.example.CrudSpringBoot.service.interfaceService;
+package com.example.CrudSpringBoot.interfaceService;
 
+import com.example.CrudSpringBoot.modelo.Persona;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.List;
 import java.util.Optional;
 
-@SpringBootApplication(scanBasePackages = {"com.example.CrudSpringBoot"})
+@SpringBootApplication(scanBasePackages = {"com.example.Ruta"})
 public interface IPersonaService {
 
     public List<Persona>listar();
